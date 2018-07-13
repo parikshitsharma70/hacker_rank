@@ -13,12 +13,12 @@ def timeConversion(s):
     
     if day_night == "AM":
         if time == 12:
-            output = "00:00:00"
+            output = "00"+s[2:-2]
         else:
             output = s[:-2]
     elif day_night == "PM":
         if time == 12:
-            output = "12:00:00"
+            output = "12"+s[2:-2]
         else:
             output = str(time+12)+s[2:-2]
             
